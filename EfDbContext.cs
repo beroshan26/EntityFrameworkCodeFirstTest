@@ -10,11 +10,17 @@ namespace EntityFrameworkCodeFirstTest
 {
     public class EfDbContext : DbContext
     {
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Enrollment> Enrollments { get; set; }
+
+
         public EfDbContext() : base("EfDbContextConnString")
         {
+            //If codefirst then comment the below and run, the EF will create the database tables
+            //if no codefirst then uncomment the below and use sql script file in the project to create db manually
+            Database.SetInitializer<EfDbContext>(null);
         }
-
-        public DbSet<Student> Students { get; set; }
+                
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

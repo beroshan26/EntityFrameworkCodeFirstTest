@@ -10,6 +10,7 @@ namespace EntityFrameworkCodeFirstTest
     {
         static void Main(string[] args)
         {
+            var efDbContext = new EfDbContext();
             var students = new List<Student>
             {
             new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01")},
@@ -22,8 +23,26 @@ namespace EntityFrameworkCodeFirstTest
             new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01")}
             };
 
-            var efDbContext = new EfDbContext();
             efDbContext.Students.AddRange(students);
+            efDbContext.SaveChanges();
+
+            var enrollments = new List<Enrollment>
+            {
+            new Enrollment{StudentID=1,CourseID=1050,Grade=Grade.A},
+            new Enrollment{StudentID=1,CourseID=4022,Grade=Grade.C},
+            new Enrollment{StudentID=1,CourseID=4041,Grade=Grade.B},
+            new Enrollment{StudentID=2,CourseID=1045,Grade=Grade.B},
+            new Enrollment{StudentID=2,CourseID=3141,Grade=Grade.F},
+            new Enrollment{StudentID=2,CourseID=2021,Grade=Grade.F},
+            new Enrollment{StudentID=3,CourseID=1050},
+            new Enrollment{StudentID=4,CourseID=1050,},
+            new Enrollment{StudentID=4,CourseID=4022,Grade=Grade.F},
+            new Enrollment{StudentID=5,CourseID=4041,Grade=Grade.C},
+            new Enrollment{StudentID=6,CourseID=1045},
+            new Enrollment{StudentID=7,CourseID=3141,Grade=Grade.A},
+            };
+
+            efDbContext.Enrollments.AddRange(enrollments);
             efDbContext.SaveChanges();
 
             Console.ReadLine();
