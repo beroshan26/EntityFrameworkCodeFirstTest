@@ -10,6 +10,7 @@ namespace EntityFrameworkCodeFirstTest
     {
         static void Main(string[] args)
         {
+            //run the program by commenting enrollments and then rerun by adding enrollments in db first approach
             var efDbContext = new EfDbContext();
             var students = new List<Student>
             {
