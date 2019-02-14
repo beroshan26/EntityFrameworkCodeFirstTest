@@ -1,0 +1,10 @@
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFrameworkCodeFirstTest.exe.config
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFrameworkCodeFirstTest.exe
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFrameworkCodeFirstTest.pdb
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFramework.dll
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFramework.xml
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\obj\Debug\EntityFrameworkCodeFirstTest.csprojResolveAssemblyReference.cache
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\obj\Debug\EntityFrameworkCodeFirstTest.exe
+C:\Samples\GitHub\EntityFrameworkCodeFirstTest\EntityFrameworkCodeFirstTest\obj\Debug\EntityFrameworkCodeFirstTest.pdb
