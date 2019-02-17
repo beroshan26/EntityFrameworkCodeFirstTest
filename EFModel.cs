@@ -28,4 +28,12 @@ namespace EntityFrameworkCodeFirstTest
         public string FirstMidName { get; set; }
         public DateTime EnrollmentDate { get; set; }        
     }
+
+    public class SchoolDetails
+    {
+        public int ID { get; set; }
+        public string University     { get; set; }
+        public string Affiliation { get; set; }
+        public int RegistrationNo { get; set; }
+    }
 }

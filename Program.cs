@@ -13,6 +13,8 @@ namespace EntityFrameworkCodeFirstTest
             //run the program by commenting enrollments and then rerun by adding enrollments in db first approach
             var efDbContext = new EfDbContext();
 
+            var schoolDetail = efDbContext.GetQuery<SchoolDetails>().FirstOrDefault();
+
             if (!efDbContext.Students.Any())
             {
                 var students = new List<Student>
