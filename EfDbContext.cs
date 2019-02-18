@@ -10,7 +10,7 @@ namespace EntityFrameworkCodeFirstTest
 {
     public class EfDbContext : DbContext
     {
-        public DbSet<Student> Students { get; set; }
+        private DbSet<Student> Students { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }       
 
         public EfDbContext() : base("EfDbContextConnString")
