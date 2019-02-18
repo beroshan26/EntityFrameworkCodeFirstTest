@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkCodeFirstTest
 {
+    public abstract class DomainModel
+    {
+
+    }
+
     public enum Grade
     {
         A, B, C, D, F
     }
 
-    public class Enrollment
+    public class Enrollment : DomainModel
     {
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
@@ -21,7 +26,7 @@ namespace EntityFrameworkCodeFirstTest
         public virtual Student Student { get; set; }
     }
 
-    public class Student
+    public class Student : DomainModel
     {
         public int ID { get; set; }
         public string LastName { get; set; }
@@ -29,7 +34,7 @@ namespace EntityFrameworkCodeFirstTest
         public DateTime EnrollmentDate { get; set; }        
     }
 
-    public class SchoolDetails
+    public class SchoolDetails : DomainModel
     {
         public int ID { get; set; }
         public string University     { get; set; }

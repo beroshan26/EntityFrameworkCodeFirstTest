@@ -26,7 +26,7 @@ namespace EntityFrameworkCodeFirstTest
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public IQueryable<T> GetQuery<T> () where T : class
+        public IQueryable<T> GetQuery<T> () where T : DomainModel
         {
             return Set<T>();
         }
