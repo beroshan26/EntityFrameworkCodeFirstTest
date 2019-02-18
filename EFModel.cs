@@ -34,7 +34,7 @@ namespace EntityFrameworkCodeFirstTest
         public DateTime EnrollmentDate { get; set; }        
     }
 
-    public class SchoolDetails : DomainModel
+    public class Registration : DomainModel
     {
         public int ID { get; set; }
         public string University     { get; set; }

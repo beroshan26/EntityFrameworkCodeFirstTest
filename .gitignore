@@ -17,3 +17,5 @@ bin/Debug/EntityFrameworkCodeFirstTest.exe
 *.pdb
 *.pdb
 *.exe
+*.exe
+*.pdb

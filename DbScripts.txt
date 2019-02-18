@@ -42,11 +42,11 @@ GO
 ALTER TABLE [dbo].[Enrollment] CHECK CONSTRAINT [FK_dbo.Enrollment_dbo.Student_StudentID]
 GO
 
-CREATE TABLE [dbo].[SchoolDetails](
+CREATE TABLE [dbo].[Registration](
 	[University] [nchar](10) NULL,
 	[Affiliation] [nchar](10) NULL,
 	[RegistrationNo] [int] NULL,
-	[ID] [int] NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL,
  CONSTRAINT [PK_SchoolDetails] PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC
